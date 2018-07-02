@@ -11,6 +11,41 @@
 |
 */
 
+/* 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return view('Welcome');
 });
+*/
+
+/*
+Route::get('/login', function () {
+    // get info straight from Resource/views/pages blade files.
+    return view('pages.login');
+});
+
+Route::get('/registration', function () {
+    
+    return view('pages.registration');
+});
+
+Route::get('/downloads', function () {
+    
+    return view('pages.downloads');
+});
+
+Route::get('/misc', function () {
+    
+    return view('pages.misc');
+});
+
+Route::get('/extrapage', function () {
+    
+    return view('pages.extrapage');
+});
+*/
+
+Route::get('/registration', 'PagesController@registration');
+Route::get('/downloads', 'PagesController@downloads');
+Route::get('/login', 'PagesController@login');
+Route::get('/', 'PagesController@index');
