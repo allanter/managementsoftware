@@ -6,7 +6,7 @@
 @section('content')
         <div class="jumbotron text-center">
         <h1>Welcome to the Class Management Software</h1>
-        <p>This is a basic application for a school to manage its classes, teachers and students.</p>
+        <p>This is an application for a school to manage its classes, teachers and students.</p>
     </div>
 
             <form>
