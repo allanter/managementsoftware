@@ -1,5 +1,6 @@
 <?php
 
+use App\Users;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -11,6 +12,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        Eloquent::unguard();
+        $this->call('UsersTableSeeder');
     }
 }
+// run 'composer dump-autoload' first, then run '$ php artisan db:seed'
