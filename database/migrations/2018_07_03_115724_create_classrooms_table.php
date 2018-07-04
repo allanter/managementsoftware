@@ -19,7 +19,7 @@ class CreateClassroomsTable extends Migration
             $table->string('teacher'); //class must have 1 teacher
             $table->integer('students'); //class can have one or many students
 
-            // FK. IT WORKED!! AFTER I MIGRATED THIS FILE LAST!!!
+            // Foreign Key. IT WORKED!! AFTER I MIGRATED THIS FILE LAST!!!
 
             $table->unsignedInteger('teachers_id');
 
