@@ -47,5 +47,15 @@ Route::get('/extrapage', function () {
 
 Route::get('/registration', 'PagesController@registration');
 Route::get('/downloads', 'PagesController@downloads');
-Route::get('/login', 'PagesController@login');
+
 Route::get('/', 'PagesController@index');
+
+Route::resource('posts', 'PostsController');
+// related to posts controller to for a GET request
+
+Route::post('/checklogin', 'PagesController@checklogin');
+
+Route::get('/login', 'PagesController@login');
+//after successful login
+
+Route::get('/logout', 'PagesController@logout');
